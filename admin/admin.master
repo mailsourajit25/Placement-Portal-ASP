@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="../content/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    <title></title>
+    <style>
+        .wraped {
+            margin-top:10px;
+        }
+        </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="wraped">
+    <div class="container" style="width:80%">
+    <form id="form2" runat="server">
+        <div class="row">
+            <!--Navbar-->
+            <div class="col-sm-4">
+                <asp:Image ID="logo" CssClass="img-responsive" ImageUrl="~/images/logo.png" runat="server" Height="122px" Width="214px" />
+                </div>
+            <div class="col-sm-8" style="border-bottom:solid 4px #669900;margin-top:25px;" >
+                <asp:Menu ID="Menu1" Orientation="Horizontal" DataSourceID="SiteMapDataSource2" runat="server" StaticMenuStyle-HorizontalPadding="10px" Width="100%">
+                    <DynamicHoverStyle BackColor="White" Font-Bold="True" ForeColor="#CC3300" />
+                    <DynamicMenuItemStyle BorderColor="#669900" BorderStyle="Solid" Font-Bold="True" ForeColor="#CC3300" HorizontalPadding="1px" />
+                    <DynamicMenuStyle BorderColor="Black" />
+                    <StaticHoverStyle BackColor="#003300" ForeColor="White" />
+                    <StaticMenuItemStyle Font-Names="Corbel" Font-Size="Large" ForeColor="#CC3300" HorizontalPadding="12px" Font-Bold="True" />
+
+<StaticMenuStyle HorizontalPadding="10px"></StaticMenuStyle>
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource2" SiteMapProvider="newProvider" runat="server" ShowStartingNode="False" />
+                </div>
+        <!--Content-->
+    <div class="col-sm-12" style="margin-top:20px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            </div> 
+    </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../content/bootstrap/js/jquery-2.1.4.min.js"></script>
+     <script type="text/javascript" src="../content/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
