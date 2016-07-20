@@ -2,7 +2,7 @@
 It is a portal of a fake colege KIT(Kolkata Institute of Technology).
 <br />Designed Using:ASP.NET web forms
 <br />Database Used:MS SQL SERVER
-FEATURES:
+<br /><b>FEATURES:</b>
 <ul>
 <li>Admin panel</li>
 <li>Student Verification</li>
